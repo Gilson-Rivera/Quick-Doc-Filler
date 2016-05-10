@@ -1,0 +1,171 @@
+Created by PLY version 3.8 (http://www.dabeaz.com/ply)
+
+Grammar
+
+Rule 0     S' -> program
+Rule 1     program -> statement
+Rule 2     statement -> command NAME ID SAL NAME DATE NAME
+Rule 3     statement -> command NAME ID NAME
+Rule 4     statement -> command EMAIL NAME
+Rule 5     statement -> command param
+Rule 6     statement -> command
+Rule 7     command -> NAME
+Rule 8     param -> NAME
+Rule 9     param -> ID
+
+Terminals, with rules where they appear
+
+DATE                 : 2
+EMAIL                : 4
+ID                   : 2 3 9
+NAME                 : 2 2 2 3 3 4 7 8
+SAL                  : 2
+error                : 
+
+Nonterminals, with rules where they appear
+
+command              : 2 3 4 5 6
+param                : 5
+program              : 0
+statement            : 1
+
+Parsing method: LALR
+
+state 0
+
+    (0) S' -> . program
+    (1) program -> . statement
+    (2) statement -> . command NAME ID SAL NAME DATE NAME
+    (3) statement -> . command NAME ID NAME
+    (4) statement -> . command EMAIL NAME
+    (5) statement -> . command param
+    (6) statement -> . command
+    (7) command -> . NAME
+
+    NAME            shift and go to state 4
+
+    statement                      shift and go to state 1
+    program                        shift and go to state 2
+    command                        shift and go to state 3
+
+state 1
+
+    (1) program -> statement .
+
+    $end            reduce using rule 1 (program -> statement .)
+
+
+state 2
+
+    (0) S' -> program .
+
+
+
+state 3
+
+    (2) statement -> command . NAME ID SAL NAME DATE NAME
+    (3) statement -> command . NAME ID NAME
+    (4) statement -> command . EMAIL NAME
+    (5) statement -> command . param
+    (6) statement -> command .
+    (8) param -> . NAME
+    (9) param -> . ID
+
+    NAME            shift and go to state 8
+    EMAIL           shift and go to state 6
+    $end            reduce using rule 6 (statement -> command .)
+    ID              shift and go to state 5
+
+    param                          shift and go to state 7
+
+state 4
+
+    (7) command -> NAME .
+
+    NAME            reduce using rule 7 (command -> NAME .)
+    EMAIL           reduce using rule 7 (command -> NAME .)
+    ID              reduce using rule 7 (command -> NAME .)
+    $end            reduce using rule 7 (command -> NAME .)
+
+
+state 5
+
+    (9) param -> ID .
+
+    $end            reduce using rule 9 (param -> ID .)
+
+
+state 6
+
+    (4) statement -> command EMAIL . NAME
+
+    NAME            shift and go to state 9
+
+
+state 7
+
+    (5) statement -> command param .
+
+    $end            reduce using rule 5 (statement -> command param .)
+
+
+state 8
+
+    (2) statement -> command NAME . ID SAL NAME DATE NAME
+    (3) statement -> command NAME . ID NAME
+    (8) param -> NAME .
+
+    ID              shift and go to state 10
+    $end            reduce using rule 8 (param -> NAME .)
+
+
+state 9
+
+    (4) statement -> command EMAIL NAME .
+
+    $end            reduce using rule 4 (statement -> command EMAIL NAME .)
+
+
+state 10
+
+    (2) statement -> command NAME ID . SAL NAME DATE NAME
+    (3) statement -> command NAME ID . NAME
+
+    SAL             shift and go to state 12
+    NAME            shift and go to state 11
+
+
+state 11
+
+    (3) statement -> command NAME ID NAME .
+
+    $end            reduce using rule 3 (statement -> command NAME ID NAME .)
+
+
+state 12
+
+    (2) statement -> command NAME ID SAL . NAME DATE NAME
+
+    NAME            shift and go to state 13
+
+
+state 13
+
+    (2) statement -> command NAME ID SAL NAME . DATE NAME
+
+    DATE            shift and go to state 14
+
+
+state 14
+
+    (2) statement -> command NAME ID SAL NAME DATE . NAME
+
+    NAME            shift and go to state 15
+
+
+state 15
+
+    (2) statement -> command NAME ID SAL NAME DATE NAME .
+
+    $end            reduce using rule 2 (statement -> command NAME ID SAL NAME DATE NAME .)
+
