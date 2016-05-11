@@ -28,7 +28,7 @@
 After downloading the code and importing it to the Python IDE, run the Parser.py file to start the interpreter and beging inserting commands.
 
 
-##Available commands
+##Language Features
 
 
 • add - Inserts a new employee to database.
@@ -71,7 +71,7 @@ After downloading the code and importing it to the Python IDE, run the Parser.py
 
 
 
-##Examples of command usage
+##Examples of features usage
 
 
 ###Formats: 
