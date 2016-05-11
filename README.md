@@ -133,7 +133,7 @@ After downloading the code and importing it to the Python IDE, run the Parser.py
   •email_Address - email to which a generated file will be sent
   
   
-###Team:
+##Team:
 
 *Luis E. Rivera Padilla*
 
