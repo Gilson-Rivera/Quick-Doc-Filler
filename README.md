@@ -61,11 +61,13 @@ After downloading the code and importing it to the Python IDE, run the Parser.py
 
 
 
-•print - Prints selected document.
+• print - Prints selected document.
 
 
-•email - Sends an email with a specified document attached to a given email address.
+• email - Sends an email with a specified document attached to a given email address.
 
+
+• exit - Close the interpreter
 
 
 
@@ -102,6 +104,9 @@ After downloading the code and importing it to the Python IDE, run the Parser.py
 
 
   	email email_Address fileName
+  	
+  	
+  	exit
 
 
 
