@@ -131,3 +131,12 @@ After downloading the code and importing it to the Python IDE, run the Parser.py
   •fileName - name of a file generated
 
   •email_Address - email to which a generated file will be sent
+  
+  
+###Team:
+
+*Luis E. Rivera Padilla*
+
+*Miguel A. Velez Ocasio*
+
+*Luis A. Suárez Burgos*
