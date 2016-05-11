@@ -1,4 +1,4 @@
-##Quick Doc Filler Programming Language
+###Quick Doc Filler Programming Language
 
 
 #Required software
@@ -9,13 +9,13 @@
 •The following python packages: 
 
 
-◦openpyxl-2.3.3
+  ◦openpyxl-2.3.3
 
 
-◦python-docx-0.8.5
+  ◦python-docx-0.8.5
 
-
-◦PLY-3.8
+  
+  ◦PLY-3.8
 
 
 •Python IDE, i.e. PyCharm
@@ -41,24 +41,24 @@ After downloading the code and importing it to the Python IDE, run the Parser.py
 
 
 
-              Types of documents that can be generated:
+  Types of documents that can be generated:
 
-1.eCert - Employment Certification
-
-
-2.eEval - Employee Performance Evaluation
+   1.eCert - Employment Certification
 
 
-3.eCont - Employment Contract
+   2.eEval - Employee Performance Evaluation
 
 
-4.eDism - Employee Dismissal Letter
+   3.eCont - Employment Contract
 
 
-5.eWarn - Employee Warning Notice
+   4.eDism - Employee Dismissal Letter
 
 
-6.eTrain - Employee Training Certificate
+   5.eWarn - Employee Warning Notice
+
+
+   6.eTrain - Employee Training Certificate
 
 
 
@@ -75,60 +75,60 @@ After downloading the code and importing it to the Python IDE, run the Parser.py
 
 Formats: 
 
-•add Name ID Salary Position Date Supervisor
+  •add Name ID Salary Position Date Supervisor
 
 
-•delete ID
+  •delete ID
 
 
-•generate eCert ID Output_File_Name
+  •generate eCert ID Output_File_Name
 
 
-•generate eEval ID Output_File_Name
+  •generate eEval ID Output_File_Name
 
 
-•generate eCont ID Output_File_Name
+  •generate eCont ID Output_File_Name
 
 
-•generate eDism ID Output_File_Name
+  •generate eDism ID Output_File_Name
 
 
-•generate eWarn ID Output_File_Name
+  •generate eWarn ID Output_File_Name
 
 
-•generate eTrain ID Output_File_Name
+  •generate eTrain ID Output_File_Name
 
 
-•print fileName
+  •print fileName
 
 
-•email email_Address fileName
+  •email email_Address fileName
 
 
 
 Parameters:
 
-•Name - name of the new employee to be added
+  •Name - name of the new employee to be added
 
 
-•ID - identification number of the an employee
+  •ID - identification number of the an employee
 
 
-•Salary - salary of the employee
+  •Salary - salary of the employee
 
 
-•Position - position of employee in the company
+  •Position - position of employee in the company
 
 
-•Date - employment date
+  •Date - employment date
 
 
-•Supervisor - supervisor of the employee
+  •Supervisor - supervisor of the employee
 
 
-•Output_File_Name - desired name of the file generated
+  •Output_File_Name - desired name of the file generated
 
 
-•fileName - name of a file generated
+  •fileName - name of a file generated
 
-•email_Address - email to which a generated file will be sent
+  •email_Address - email to which a generated file will be sent
