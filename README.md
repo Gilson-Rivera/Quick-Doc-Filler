@@ -124,7 +124,7 @@ After downloading the code and importing it to the Python IDE, run the Parser.py
   • Position - position of employee in the company
 
 
-  • Date - employment date
+  • Date - employment date, i.e. 15/dec/2001
 
 
   • Supervisor - supervisor of the employee
