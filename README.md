@@ -9,13 +9,13 @@
 •The following python packages: 
 
 
-  ◦openpyxl-2.3.3
+	◦openpyxl-2.3.3
 
 
-  ◦python-docx-0.8.5
+	◦python-docx-0.8.5
 
   
-  ◦PLY-3.8
+	◦PLY-3.8
 
 
 •Python IDE, i.e. PyCharm
