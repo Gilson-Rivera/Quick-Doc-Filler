@@ -1,11 +1,11 @@
 import ply.yacc as yacc
 from openpyxl import load_workbook
 
-from DB import Lex_Draft
+from DB import Lex
 from DB.Database import *
 from DB.TempHandler import *
 
-tokens = Lex_Draft.tokens
+tokens = Lex.tokens
 db = Database
 th = TempHandler
 

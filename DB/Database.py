@@ -1,7 +1,5 @@
 from openpyxl import load_workbook
-# from openpyxl.utils import coordinate_from_string, column_index_from_string
 import os
-# import codecs
 
 
 class Database:
