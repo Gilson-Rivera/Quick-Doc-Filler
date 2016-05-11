@@ -1,7 +1,7 @@
-###Quick Doc Filler Programming Language
+#Quick Doc Filler Programming Language
 
 
-#Required software
+##Required software
 
 •Python 3.4
 
@@ -22,13 +22,13 @@
 
 
 
-#Running the Quick Doc Filler Interpreter on Python IDE
+##Running the Quick Doc Filler Interpreter on Python IDE
 
 
 After downloading the code and importing it to the Python IDE, run the Parser.py file to start the interpreter and beging inserting commands.
 
 
-#Available commands
+##Available commands
 
 
 •add -    Inserts a new employee to database.
@@ -40,25 +40,24 @@ After downloading the code and importing it to the Python IDE, run the Parser.py
 •generate - Creates one of 6 different documents using the information of an employee in the database.
 
 
+	Types of documents that can be generated:
 
-  Types of documents that can be generated:
-
-   1.eCert - Employment Certification
-
-
-   2.eEval - Employee Performance Evaluation
+	1.eCert - Employment Certification
 
 
-   3.eCont - Employment Contract
+	2.eEval - Employee Performance Evaluation
 
 
-   4.eDism - Employee Dismissal Letter
+	3.eCont - Employment Contract
 
 
-   5.eWarn - Employee Warning Notice
+	4.eDism - Employee Dismissal Letter
 
 
-   6.eTrain - Employee Training Certificate
+	5.eWarn - Employee Warning Notice
+
+
+	6.eTrain - Employee Training Certificate
 
 
 
@@ -70,10 +69,10 @@ After downloading the code and importing it to the Python IDE, run the Parser.py
 
 
 
-#Examples of command usage
+##Examples of command usage
 
 
-Formats: 
+###Formats: 
 
   •add Name ID Salary Position Date Supervisor
 
@@ -106,7 +105,7 @@ Formats:
 
 
 
-Parameters:
+###Parameters:
 
   •Name - name of the new employee to be added
 
