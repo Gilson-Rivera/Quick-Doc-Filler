@@ -21,11 +21,16 @@
 • Python IDE, i.e. PyCharm
 
 
+<br><br>
+
 
 ##Running the Quick Doc Filler Interpreter on Python IDE
 
 
 After downloading the code and importing it to the Python IDE, run the Parser.py file to start the interpreter and beging inserting commands.
+
+
+<br><br>
 
 
 ##Language Features
@@ -70,6 +75,8 @@ After downloading the code and importing it to the Python IDE, run the Parser.py
 • exit - Close the interpreter
 
 
+<br><br>
+
 
 ##Examples of features usage
 
@@ -109,6 +116,8 @@ After downloading the code and importing it to the Python IDE, run the Parser.py
   	exit
 
 
+<br><br>
+
 
 ###Parameters:
 
@@ -134,9 +143,103 @@ After downloading the code and importing it to the Python IDE, run the Parser.py
 
 
   • fileName - name of a file generated
+  
 
   • email_Address - email to which a generated file will be sent
   
+  
+<br><br>
+
+
+###How to use QDF:  
+
+Next is an example of a code that can be run in the interpreter:
+
+	add John 65 10000 Cashier 2/May/2016 Michael
+	
+
+This line adds a new worker to the database. The parameters are the following:
+
+ • Name = John
+ 
+ 
+ • ID = 65
+ 
+ 
+ • Salary = 10000
+ 
+ 
+ • Position = Cashier
+ 
+ 
+ • Date = 2/May/2016
+ 
+ 
+ • Supervisor = Michael
+ 
+ 
+<br><br>
+
+
+	generate eCert 65 NewCert
+	
+	
+This line generates an employee certificate with the information of the employee with the ID and will be named NewCert. The parameters are the following:	
+
+
+ • Doc = eCert
+ 
+ 
+ • ID = 65
+ 
+ 
+ • DocName = NewCert
+ 
+ 
+ <br><br>
+ 
+ 
+ 	print NewCert
+ 	
+
+This line prints the created document NewCert. The parameter is the DocName (document name). 
+
+
+<br><br>
+
+
+	email luis.suarez85@upr.edu NewCert
+	
+	
+This line send an email to the given address with the selected document attached. The parameters are:
+
+
+ • emailAddress = luis.suarez85@upr.edu
+ 
+ 
+ • DocName = NewCert
+ 
+ 
+ <br><br>
+ 
+ 
+ 	delete 65
+ 	
+ 	
+This line deletes the employee with ID equal to 65, the one that was added at the beginning of the example. The parameters is the employee ID.
+
+
+<br><br>
+
+
+	exit
+	
+
+This line closes the interpreter.
+
+	
+<br><br>
+
   
 ##Team:
 
